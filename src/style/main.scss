@@ -1,0 +1,62 @@
+@import "./vendors/bootstrap.scss";
+
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+@import "./abstracts/helpers";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+
+@import "./layout/footer";
+@import "./layout/sections";
+
+@import "./sections/about";
+@import "./sections/contact";
+@import "./sections/hero";
+@import "./sections/projects";
+
+.contact-form-wrapper {
+  background-color: teal;
+  box-shadow: 0 0 2px;
+
+  .contact-form {
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    // height: 40%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    input {
+      margin: 0.7em 0;
+      width: 20%;
+    }
+  }
+
+  label:first-child {
+    margin-top: 1em;
+  }
+
+  input[type="submit"] {
+    margin: 1em;
+    color: #071b45;
+    border: none;
+    width: 25%;
+    height: 20%;
+    padding: 0.8em 0.5em;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+
+    &:hover {
+      background-color: #071b45;
+      color: white;
+    }
+  }
+}
+
+textarea {
+  width: 20%;
+}
